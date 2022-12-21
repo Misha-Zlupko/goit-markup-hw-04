@@ -57,6 +57,7 @@ body {
 
 
 
+
 .header-button .link {
     display: block;
     padding-top: 32px;
@@ -301,6 +302,52 @@ body {
 }
 
 
+
+.list-item1::before {
+    display: block;
+    content: "";
+    height: 120px;
+    background-image: url(../img/icons.svg/Group1.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--center-button-backgraund);
+    padding: 25px 102px;
+}
+
+.list-item2::before {
+    display: block;
+    content: "";
+    height: 120px;
+    background-image: url(../img/icons.svg/clock\ 1.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--center-button-backgraund);
+    padding: 25px 102px;
+}
+
+.list-item3::before {
+    display: block;
+    content: "";
+    height: 120px;
+    background-image: url(../img/icons.svg/diagram\ 1.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--center-button-backgraund);
+    padding: 33px 100px;
+}
+
+.list-item4::before {
+    display: block;
+    content: "";
+    height: 120px;
+    background-image: url(../img/icons.svg/astronaut\ 1.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--center-button-backgraund);
+    padding: 25px 100px;
+}
+
+
 /* header */
 
 
@@ -319,11 +366,13 @@ body {
 .button-nomber {
     color: var(--link-text-color);
     margin-left: 50px;
+    align-items: center;
 }
 
 
 .button-gmail {
     color: var(--link-text-color);
+    align-items: center;
 }
 
 
@@ -460,9 +509,37 @@ body {
 }
 
 
+/* Icon */
+
+.button-nomber .icon {
+    width: 16px;
+    height: 12px;
+    display: inline-block;
+    background-image: url(../img/icons.svg/smartphone.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 10px;
+}
+
+.button-gmail .icon {
+    width: 16px;
+    height: 12px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    background-image: url(../img/icons.svg/maill.svg);
+    background-size: contain;
+    align-items: center;
+}
+
+/* .button-gmail .icon:hover, .button-gmail .icon:focus {
+    color: var(--hover-focus-color);
+}
 
 
-
+.button-nomber .icon:hover, .button-nomber .icon:focus {
+    color: var(--hover-focus-color);
+} */
 
 
 /* main nav */
@@ -574,10 +651,20 @@ body {
 
 
 .section-business {
-    background-color: var(--footer-backgraund-color);
     padding-bottom: 200px;
     text-align: center;
     padding-top: 200px;
+    background-color: var(--footer-backgraund-color);
+    background-image: linear-gradient(to right ,
+     rgba(0,0,0,0.4) ,
+     rgba(0, 0, 0, 0.4)
+    ), url(../img/back\ ground\ hero\ chenge.jpg);
+    height: 600px;
+    max-width: 1600px;
+    margin-right: auto;
+    margin-left: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
@@ -610,6 +697,7 @@ body {
     line-height: 1.1;
     letter-spacing: 0.03em;
     margin-bottom: 10px;
+    margin-top: 30px;
 }
 
 
@@ -841,3 +929,103 @@ body {
     padding-bottom: 20px;
     padding-top: 20px;
 }
+
+
+/* Icon html */
+
+.icon-head {
+    list-style: none;
+}
+
+.icon-text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.03em;
+    font-style: normal;
+    text-transform: uppercase;
+    color: #FFFFFF; 
+}
+
+
+
+
+
+.icon-content1 {
+    list-style: none;
+    padding-left: 0;
+}
+
+
+.icon-content2 {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+.icon-button {
+    width: 44px;
+    height: 44px;
+    border: none;
+    border-radius: 50%;
+}
+
+
+
+.icon-wapper1 {
+    width: 20px;
+    height: 20px;
+}
+
+.icon-wapper2 {
+    width: 20px;
+    height: 20px;
+}
+
+
+.icon-wapper3 {
+    width: 20px;
+    height: 20px;
+}
+
+
+.icon-wapper4 {
+    width: 20px;
+    height: 20px;
+}
+
+
+
+/* icon main */
+
+
+.icon-main {
+    list-style: none;
+    display: flex;
+}
+
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.icon-main li {
+    width: 170px;
+    height: 92px;
+    margin-right: 30px;
+}
+
+
+/* .icon-main li svg {
+    width: 170px;
+    height: 92px;
+    margin-right: 30px;
+} */
