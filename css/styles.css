@@ -44,7 +44,9 @@ li {
     padding-bottom: 94px;
 }
 
-
+img {
+    display: block;
+}
 
 /* body */
 
@@ -177,6 +179,17 @@ body {
 
 
 
+.box-description {
+    display: block;
+}
+
+
+
+.box-description:hover, .box-description:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+
 
 
 .center-button {
@@ -229,6 +242,7 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
     padding: 6px 25px;
     border: 0px;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
 }
 
 
@@ -243,6 +257,7 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
     border-radius: 4px;
     padding: 6px 22px;
     border: 0px;
+    cursor: pointer;
 }
 
 
@@ -257,6 +272,7 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
     border-radius: 4px;
     padding: 6px 22px;
     border: 0px;
+    cursor: pointer;
 }
 
 .buttonn4 {
@@ -270,6 +286,7 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
     border-radius: 4px;
     padding: 6px 22px;
     border: 0px;
+    cursor: pointer;
 }
 
 
@@ -284,6 +301,7 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
     border-radius: 4px;
     padding: 6px 22px;
     border: 0px;
+    cursor: pointer;
 }
 
 
@@ -293,6 +311,7 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
     font-size: 18px;
     line-height: 2;
     margin-bottom: 4px;
+    color: var(--description-text-color);
 }
 
 
@@ -314,7 +333,7 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
     background-repeat: no-repeat;
     background-position: center;
     background-color: var(--center-button-backgraund);
-    padding: 25px 102px;
+    border-radius: 4px;
 }
 
 .list-item2::before {
@@ -325,7 +344,7 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
     background-repeat: no-repeat;
     background-position: center;
     background-color: var(--center-button-backgraund);
-    padding: 25px 102px;
+    border-radius: 4px;
 }
 
 .list-item3::before {
@@ -336,7 +355,7 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
     background-repeat: no-repeat;
     background-position: center;
     background-color: var(--center-button-backgraund);
-    padding: 33px 100px;
+    border-radius: 4px;
 }
 
 .list-item4::before {
@@ -347,7 +366,7 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
     background-repeat: no-repeat;
     background-position: center;
     background-color: var(--center-button-backgraund);
-    padding: 25px 100px;
+    border-radius: 4px;
 }
 
 
@@ -371,6 +390,16 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
     margin-left: 50px;
     align-items: center;
 }
+
+
+
+/* .button-nomber svg use {
+    fill: var(--link-text-color);
+} */
+
+
+
+
 
 
 .button-gmail {
@@ -442,6 +471,9 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
     font-weight: 500;
     font-size: 14px;
     line-height: 1.2;
+    display: flex;
+    align-items: center;
+    color: #757575;
 }
 
 
@@ -476,9 +508,12 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
 }
 
 
-.header-button-nomber :hover , .header-button-nomber :focus{
+.header-button-nomber a:hover , .header-button-nomber a:focus{
     color: var(--hover-focus-color);
+    fill: var(--hover-focus-color);
 }
+
+
 
 
 
@@ -486,6 +521,7 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
     display: flex;
     flex-wrap: wrap;
     padding-left: 0;
+    text-decoration: none;
 }
 
 
@@ -513,14 +549,12 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
 
 
 
-.test-conteiner li:hover {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
+
 
 
 /* Icon */
 
-.button-nomber .icon {
+/* .button-nomber .icon {
     width: 16px;
     height: 12px;
     display: inline-block;
@@ -539,16 +573,22 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
     background-image: url(../img/icons.svg/maill.svg#maill);
     background-size: contain;
     align-items: center;
-}
-
-/* .button-gmail .icon:hover, .button-gmail .icon:focus {
-    color: var(--hover-focus-color);
-}
-
-
-.button-nomber .icon:hover, .button-nomber .icon:focus {
-    color: var(--hover-focus-color);
 } */
+
+.button-nomber svg{
+    width: 16px;
+    height: 12px;
+    fill: currentColor;
+    margin-right: 10px
+}
+
+
+.button-gmail svg{
+    width: 16px;
+    height: 12px;   
+    fill: currentColor;
+    margin-right: 10px
+}
 
 
 /* main nav */
@@ -649,6 +689,9 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
 
 
 .business-header {
+    width: 696px;
+    margin-left: auto;
+    margin-right: auto;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.4;
@@ -816,7 +859,7 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
     line-height: 1.2;
     letter-spacing: 0.03em; 
     color: var(--link-text-color);
-    padding-bottom: 30px;
+    margin-bottom: 30px;
     padding-left: 97px;
 }
 
@@ -852,18 +895,24 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
     padding-left: 0;
 
     justify-content: center;
+    
 }
 
 
 
 
 
-.foto-team li {
+.foto-team .foto-team-shadow {
     margin-right: 30px;
     background-color: var(--primary-backgraund-color);
     justify-content: center;
-    border-radius: 0px 0px 4px 4px;
+}
+
+
+
+.foto-team-shadow {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 
 
@@ -948,6 +997,12 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
 }
 
 
+.background-discraption {
+    display: none;
+}
+
+
+
 /* Icon html */
 
 .icon-head {
@@ -994,6 +1049,9 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
     border: none;
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.1);
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
 }
 
 
@@ -1041,6 +1099,7 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
     list-style: none;
     display: flex;
     gap: 30px;
+    fill: #188CE8;
 }
 
 
@@ -1049,67 +1108,165 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
     margin-right: auto;
 }
 
-.icon-main li {
+.icon-main a {
     width: 170px;
     height: 92px;
+    color: #AFB1B8;
 }
 
 
 .icon-main li svg {
     width: 106px;
     height: 60px;
-    fill: #AFB1B8;
+    fill: currentColor;
 }
 
 
-.icon-main li {
+.icon-main a {
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     align-items: center;
     justify-content: space-around;
+    display: flex;
 }
 
 
 
-.icon-main li:hover {
-    border: 1px solid var(--hover-focus-color);
+.icon-main a:hover, .icon-main a svg:hover {
+    border-color: #2196F3;
+
 }
 
 
 
-.icon-main li svg:hover, .icon-main li svg:focus {
+
+.icon-main a svg:hover {
+    fill: #2196F3;
+}
+
+
+
+
+/* .icon-main li svg:hover, .icon-main li svg:focus {
     fill: var(--hover-focus-color);
+} */
+
+
+
+
+/* .icon-team {
+    display: flex;
+    list-style: none;
+    width: 270px;
+    height: 44px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 30px;
+} */
+
+
+
+
+/* .icon-discraib {
+    width: 44px;
+    height: 44px;
+    background-color: red;
+    border-radius: 50%
+} */
+
+
+
+
+/* .icon-team li svg use {
+    fill:#AFB1B8;;
 }
+
+
+
+
+
+
+
+.button-nomber .icon {
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+
+.button-gmail .icon {
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+
+/* .icon-wipper {
+    width: 44px;
+    height: 44px;
+    box-shadow: none; 
+    margin-right: 10px;
+} */
+
+.icon-team {
+    list-style: none;
+    padding-left: 0;
+    width: 270px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+
+.icon-wipper {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: #AFB1B8;
+    color: white;
+}
+
+
+.icon-wipper:hover, .icon-wipper:focus {
+    background-color: var(--hover-focus-color);
+}
+
+
+
+.icon-wipper:hover .icon-discraib {
+    fill: currentColor;
+}
+
 
 
 .icon-discraib {
-    width: 206px;
-    height: 44px;
-    display: flex;
-    fill: #212121;
-}
-
-.icon-team {
-    display: flex;
-    list-style: none;
-}
-
-
-.icon-team li svg {
     width: 20px;
     height: 20px;
 }
 
-.icon-team li{
-    box-shadow: none; 
-    width: 44px;
-    height: 44px;
 
+
+.icon-team li {
+    border-radius: 50%;
     margin-right: 10px;
 }
 
 
-.icon-team li svg use {
-    fill:#AFB1B8;;
+.icon-button li:hover,  .icon-button li:focus{
+    background-color: var(--hover-focus-color);
 }
 
+
+
+.icon-discraption {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(42 / 36);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121; 
+    margin-bottom: 50px;
+}
